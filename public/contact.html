@@ -1,167 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Contact Us | Writee</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="stylesheet" href="./css/tailwind/tailwind.min.css" />
 
-  <head>
-    <title>Contact Us | Writee</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-tailwind.png" />
+        <script src="./js/main.js"></script>
+    </head>
 
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png">
-    <script src="js/main.js"></script>
-  </head>
+    <body class="antialiased bg-body text-body font-body">
+        <header class="w-full">
+            <div class="container px-4 mx-auto">
+                <!-- Nav starts -->
+                <nav class="flex justify-between items-center mx-auto py-6 max-w-[1200px]">
+                    <a class="text-3xl font-semibold leading-none mr-14" href="../index.html">
+                        <img class="w-20" src="./metis-assets/images/logo2.svg" alt="" height="auto" />
+                    </a>
+                    <div class="lg:hidden">
+                        <button class="navbar-burger flex items-center py-2 px-3 text-indigo-600 hover:text-indigo-700 rounded border border-indigo-200 hover:border-indigo-300">
+                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Product</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Company</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Features</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./blogs.html">Blogs</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./team.html">Team</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="hidden lg:block">
+                        <a class="mr-2 inline-block px-4 py-3 text-xs text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="./signin.html">Log In</a
+                        ><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="./signup.html">Sign Up</a>
+                    </div>
+                </nav>
 
-  <body class="antialiased bg-body text-body font-body">
-    <div class="">
+                <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+                    <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+                    <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
+                        <div class="flex items-center mb-8">
+                            <a class="mr-auto text-3xl font-semibold leading-none" href="../index.html">
+                                <img class="h-20" src="./metis-assets/images/logo2.svg" alt="" width="auto" />
+                            </a>
+                            <button class="navbar-close">
+                                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Product</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Company</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Features</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./blogs.html">Blogs</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./team.html">Team</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./contact.html">Contact Us</a></li>
+                            </ul>
+                            <div class="mt-2 pt-6 border-t border-blueGray-100">
+                                <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="./signup.html">Sign Up</a
+                                ><a class="block px-4 py-3 mb-2 text-xs text-center text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="./signin.html">Log In</a>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <p class="my-4 text-xs text-blueGray-400">
+                                <span>Get in Touch</span>
+                                <a class="text-indigo-600 hover:text-indigo-600 underline" href="./contact.html">hello@writee.in</a>
+                            </p>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/facebook-blue.svg" alt="" />
+                            </a>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/twitter-blue.svg" alt="" />
+                            </a>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/instagram-blue.svg" alt="" />
+                            </a>
+                        </div>
+                    </nav>
+                </div>
 
-      <!-- Navbar-->
-      <section>
-        <div class="container px-4 mx-auto">
-          <!-- Nav starts -->
-          <nav class="flex justify-between items-center py-6">
-            <a class="text-3xl font-semibold leading-none" href="#">
-              <img class="w-20" src="metis-assets/images/logo2.svg" alt="" height="auto">
-            </a>
-            <div class="lg:hidden">
-              <button class="navbar-burger flex items-center py-2 px-3 text-indigo-600 hover:text-indigo-700 rounded border border-indigo-200 hover:border-indigo-300">
-                <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <title>Mobile menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-              </button>
+                <!-- Nav ends -->
             </div>
-            <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Product</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Company</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">About Us</a></li>
-              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Features</a></li>
-            </ul>
-            <div class="hidden lg:block"><a
-                class="mr-2 inline-block px-4 py-3 text-xs text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="#">Log
-                In</a><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="#">Sign Up</a></div>
-          </nav>
+        </header>
 
-          <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
-            <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
-            <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
-              <div class="flex items-center mb-8">
-                <a class="mr-auto text-3xl font-semibold leading-none" href="#">
-                  <img class="h-20" src="metis-assets/images/logo2.svg" alt="" width="auto">
-                </a>
-                <button class="navbar-close">
-                  <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
-                </button>
-              </div>
-              <div>
-                <ul>
-                  <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-indigo-50 hover:text-indigo-600" href="#">Product</a></li>
-                  <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-indigo-50 hover:text-indigo-600" href="#">Company</a></li>
-                  <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-indigo-50 hover:text-indigo-600" href="#">About Us</a></li>
-                  <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-indigo-50 hover:text-indigo-600" href="#">Features</a></li>
-                </ul>
-                <div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded"
-                    href="#">Sign Up</a><a
-                    class="block px-4 py-3 mb-2 text-xs text-center text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded"
-                    href="#">Log In</a></div>
-              </div>
-              <div class="mt-auto">
-                <p class="my-4 text-xs text-blueGray-400">
-                  <span>Get in Touch</span>
-                  <a class="text-indigo-600 hover:text-indigo-600 underline" href="#">hello@writee.in</a>
-                </p>
-                <a class="inline-block px-1" href="#">
-                  <img src="metis-assets/icons/facebook-blue.svg" alt="">
-                </a>
-                <a class="inline-block px-1" href="#">
-                  <img src="metis-assets/icons/twitter-blue.svg" alt="">
-                </a>
-                <a class="inline-block px-1" href="#">
-                  <img src="metis-assets/icons/instagram-blue.svg" alt="">
-                </a>
-              </div>
-            </nav>
-          </div>
-
-          <!-- Nav ends -->
-        </div>
-      </section>
-
-      <section class="py-20">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap -mx-3">
-            <div class="w-full lg:w-1/2 px-3">
-              <div class="max-w-sm">
-                <span class="text-sm text-blueGray-400">Contact Us</span>
-                <h2 class="mt-2 text-4xl font-bold font-heading">We will be glad to hear from you!</h2>
-              </div>
-              <div class="mt-10 lg:mt-24">
-                <div class="mb-10 leading-relaxed">
-                  <h3 class="text-sm text-blueGray-400">Phone</h3>
-                  <p>+91 85840 11454</p>
+        <section class="pt-10">
+            <div class="container px-4 mx-auto">
+                <div class="flex flex-wrap -mx-3">
+                    <div class="w-full lg:w-1/2 px-3">
+                        <div class="max-w-sm">
+                            <span class="text-sm text-blueGray-400">Contact Us</span>
+                            <h2 class="mt-2 text-4xl font-bold font-heading">We will be glad to hear from you!</h2>
+                        </div>
+                        <div class="mt-10 lg:mt-10">
+                            <div class="mb-10 leading-relaxed">
+                                <h3 class="text-sm text-blueGray-400">Phone</h3>
+                                <p>+91 85840 11454</p>
+                            </div>
+                            <div class="mb-10 leading-relaxed">
+                                <h4 class="text-sm text-blueGray-400">E-mail</h4>
+                                <p>hello@writee.in</p>
+                            </div>
+                            <div class="mb-10 leading-relaxed">
+                                <h4 class="text-sm text-blueGray-400">Address</h4>
+                                <p>164/41 Lake Gardens</p>
+                                <p>Kolkata, West Bengal, 700045</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-3">
+                        <form>
+                            <div class="mb-4 text-sm">
+                                <span class="mr-4 font-semibold">Send us a text: </span>
+                            </div>
+                            <!-- <div class="mb-4 text-sm">
+								<span class="mr-4 font-semibold">Departament:</span>
+								<label class="mr-4">
+									<input class="mr-1" type="radio" name="department" value="1" checked>
+									<span>Support</span>
+								</label>
+								<label>
+									<input class="mr-1" type="radio" name="department" value="2">
+									<span>Sales</span>
+								</label>
+							</div> -->
+                            <div class="mb-4">
+                                <input class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Subject" />
+                            </div>
+                            <div class="mb-4">
+                                <input class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Name" />
+                            </div>
+                            <div class="mb-4">
+                                <input class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="email" placeholder="name@example.com" />
+                            </div>
+                            <div class="mb-4"><textarea class="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Message..."></textarea></div>
+                            <div class="mb-4">
+                                <label class="flex px-2 bg-blueGray-50 rounded">
+                                    <input class="hidden" type="file" placeholder="Choose file.." name="Choose file" />
+                                    <div class="my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer">Browse</div>
+                                </label>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <label>
+                                    <input class="mr-1" type="checkbox" name="terms" value="1" />
+                                    <span class="text-sm font-semibold">I agree to terms and conditions.</span>
+                                </label>
+                                <button class="py-4 px-8 text-sm text-white font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 rounded" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="mb-10 leading-relaxed">
-                  <h4 class="text-sm text-blueGray-400">E-mail</h4>
-                  <p>hello@writee.in</p>
-                </div>
-                <div class="mb-10 leading-relaxed">
-                  <h4 class="text-sm text-blueGray-400">Address</h4>
-                  <p>164/41 Lake Gardens</p>
-                  <p>Kolkata, West Bengal, 700045</p>
-                </div>
-              </div>
             </div>
-            <div class="w-full lg:w-1/2 px-3">
-              <form>
-                <div class="mb-4 text-sm">
-                  <span class="mr-4 font-semibold">Send us a text: </span>
-                </div>
-                <!-- <div class="mb-4 text-sm">
-                <span class="mr-4 font-semibold">Departament:</span>
-                <label class="mr-4">
-                  <input class="mr-1" type="radio" name="department" value="1" checked>
-                  <span>Support</span>
-                </label>
-                <label>
-                  <input class="mr-1" type="radio" name="department" value="2">
-                  <span>Sales</span>
-                </label>
-              </div> -->
-                <div class="mb-4">
-                  <input class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Subject">
-                </div>
-                <div class="mb-4">
-                  <input class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Name">
-                </div>
-                <div class="mb-4">
-                  <input class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none" type="email" placeholder="name@example.com">
-                </div>
-                <div class="mb-4"><textarea class="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none" type="text" placeholder="Message..."></textarea>
-                </div>
-                <div class="mb-4">
-                  <label class="flex px-2 bg-blueGray-50 rounded">
-                    <input class="hidden" type="file" placeholder="Choose file.." name="Choose file">
-                    <div class="my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer">
-                      Browse</div>
-                  </label>
-                </div>
-                <div class="flex justify-between items-center">
-                  <label>
-                    <input class="mr-1" type="checkbox" name="terms" value="1">
-                    <span class="text-sm font-semibold">I agree to terms and conditions.</span>
-                  </label>
-                  <button class="py-4 px-8 text-sm text-white font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 rounded" type="submit">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </body>
-
+        </section>
+    </body>
 </html>
