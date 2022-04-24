@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <title>Tools | Writee</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="stylesheet" href="./css/tailwind/tailwind.min.css" />
 
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png">
-        <script src="js/main.js"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-tailwind.png" />
+        <script src="./js/main.js"></script>
     </head>
 
     <body>
-        <section>
+        <header class="w-full">
             <div class="container px-4 mx-auto">
                 <!-- Nav starts -->
-                <nav class="flex justify-between items-center py-6">
-                    <a class="text-3xl font-semibold leading-none" href="#">
-                        <img class="w-20" src="metis-assets/images/logo2.svg" alt="" height="auto">
+                <nav class="flex justify-between items-center mx-auto py-6 max-w-[1200px]">
+                    <a class="text-3xl font-semibold leading-none mr-14" href="../index.html">
+                        <img class="w-20" src="./metis-assets/images/logo2.svg" alt="" height="auto" />
                     </a>
                     <div class="lg:hidden">
                         <button class="navbar-burger flex items-center py-2 px-3 text-indigo-600 hover:text-indigo-700 rounded border border-indigo-200 hover:border-indigo-300">
@@ -33,20 +32,23 @@
                     <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
                         <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Product</a></li>
                         <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Company</a></li>
-                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">About Us</a></li>
                         <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Features</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./blogs.html">Blogs</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./team.html">Team</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./contact.html">Contact Us</a></li>
                     </ul>
-                    <div class="hidden lg:block"><a
-                            class="mr-2 inline-block px-4 py-3 text-xs text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded"
-                            href="#">Log In</a><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="#">Sign Up</a></div>
+                    <div class="hidden lg:block">
+                        <a class="mr-2 inline-block px-4 py-3 text-xs text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="./signin.html">Log In</a
+                        ><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="./signup.html">Sign Up</a>
+                    </div>
                 </nav>
 
                 <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
                     <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
                     <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
                         <div class="flex items-center mb-8">
-                            <a class="mr-auto text-3xl font-semibold leading-none" href="#">
-                                <img class="h-20" src="metis-assets/images/logo2.svg" alt="" width="auto">
+                            <a class="mr-auto text-3xl font-semibold leading-none" href="../index.html">
+                                <img class="h-20" src="./metis-assets/images/logo2.svg" alt="" width="auto" />
                             </a>
                             <button class="navbar-close">
                                 <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -58,27 +60,29 @@
                             <ul>
                                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Product</a></li>
                                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Company</a></li>
-                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">About Us</a></li>
                                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Features</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./blogs.html">Blogs</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./team.html">Team</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./contact.html">Contact Us</a></li>
                             </ul>
-                            <div class="mt-4 pt-6 border-t border-blueGray-100"><a
-                                    class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="#">Sign Up</a><a
-                                    class="block px-4 py-3 mb-2 text-xs text-center text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded"
-                                    href="#">Log In</a></div>
+                            <div class="mt-2 pt-6 border-t border-blueGray-100">
+                                <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="./signup.html">Sign Up</a
+                                ><a class="block px-4 py-3 mb-2 text-xs text-center text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="./signin.html">Log In</a>
+                            </div>
                         </div>
                         <div class="mt-auto">
                             <p class="my-4 text-xs text-blueGray-400">
                                 <span>Get in Touch</span>
-                                <a class="text-indigo-600 hover:text-indigo-600 underline" href="#">hello@writee.in</a>
+                                <a class="text-indigo-600 hover:text-indigo-600 underline" href="./contact.html">hello@writee.in</a>
                             </p>
                             <a class="inline-block px-1" href="#">
-                                <img src="metis-assets/icons/facebook-blue.svg" alt="">
+                                <img src="./metis-assets/icons/facebook-blue.svg" alt="" />
                             </a>
                             <a class="inline-block px-1" href="#">
-                                <img src="metis-assets/icons/twitter-blue.svg" alt="">
+                                <img src="./metis-assets/icons/twitter-blue.svg" alt="" />
                             </a>
                             <a class="inline-block px-1" href="#">
-                                <img src="metis-assets/icons/instagram-blue.svg" alt="">
+                                <img src="./metis-assets/icons/instagram-blue.svg" alt="" />
                             </a>
                         </div>
                     </nav>
@@ -86,32 +90,32 @@
 
                 <!-- Nav ends -->
             </div>
-        </section>
+        </header>
 
         <section class="py-12 sm:py-16 bg-white container px-4 mx-auto">
             <div class="max-w-7xl px-10 mx-auto sm:text-center">
                 <p class="text-blue-500 font-medium uppercase">Our Suite of Tools</p>
                 <h2 class="font-bold text-3xl sm:text-4xl lg:text-5xl mt-3">Choose the one you need to brew magic.</h2>
                 <h2 class="font-bold text-2xl mt-16 mb-4 text-left">Social Media Captions</h2>
-                <hr>
+                <hr />
                 <div class="sm-captions grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-8 sm-my-8">
                     <a class="" href="caption.html">
                         <div class="rounded-lg py-10 flex flex-col items-center justify-center hover:border-indigo-700 shadow-lg border border-gray-100">
-                            <img src="metis-assets/images/typewriter-svgrepo-com.svg" class="w-16 h-auto" alt="">
+                            <img src="metis-assets/images/typewriter-svgrepo-com.svg" class="w-16 h-auto" alt="" />
                             <p class="font-bold mt-4">Caption Generator</p>
                             <p class="mt-2 text-sm text-gray-500">Engaging captions for all social media handles</p>
                         </div>
                     </a>
                     <a class="" href="#">
                         <div class="rounded-lg py-10 flex flex-col items-center justify-center hover:border-indigo-700 shadow-lg border border-gray-100">
-                            <img src="metis-assets/images/artificial-intelligence-svgrepo-com.svg" class="w-16 h-auto" alt="">
+                            <img src="metis-assets/images/artificial-intelligence-svgrepo-com.svg" class="w-16 h-auto" alt="" />
                             <p class="font-bold mt-4">Content Improver</p>
                             <p class="mt-2 text-sm text-gray-500">Improve the content you have written with one click.</p>
                         </div>
                     </a>
                     <a class="" href="#">
                         <div class="rounded-lg py-10 flex flex-col items-center justify-center hover:border-indigo-700 shadow-lg border border-gray-100">
-                            <img src="metis-assets/images/artificial-intelligence-svgrepo-com.svg" class="w-16 h-auto" alt="">
+                            <img src="metis-assets/images/artificial-intelligence-svgrepo-com.svg" class="w-16 h-auto" alt="" />
                             <p class="font-bold mt-4">Quotes Suggestor</p>
                             <p class="mt-2 text-sm text-gray-500">Get Quotes Suggestion for your specific need.</p>
                         </div>
@@ -200,5 +204,4 @@
             </div>
         </section>
     </body>
-
 </html>

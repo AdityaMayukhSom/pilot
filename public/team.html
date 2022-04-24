@@ -1,74 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Our Team | Writee</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="stylesheet" href="./css/tailwind/tailwind.min.css" />
 
-  <head>
-    <title>Page title</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-tailwind.png" />
+        <script src="./js/main.js"></script>
+    </head>
 
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png">
-    <script src="js/main.js"></script>
-  </head>
+    <body class="antialiased bg-body text-body font-body">
+        <header class="w-full">
+            <div class="container px-4 mx-auto">
+                <!-- Nav starts -->
+                <nav class="flex justify-between items-center mx-auto py-6 max-w-[1200px]">
+                    <a class="text-3xl font-semibold leading-none mr-14" href="../index.html">
+                        <img class="w-20" src="./metis-assets/images/logo2.svg" alt="" height="auto" />
+                    </a>
+                    <div class="lg:hidden">
+                        <button class="navbar-burger flex items-center py-2 px-3 text-indigo-600 hover:text-indigo-700 rounded border border-indigo-200 hover:border-indigo-300">
+                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Product</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Company</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Features</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./blogs.html">Blogs</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./team.html">Team</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="hidden lg:block">
+                        <a class="mr-2 inline-block px-4 py-3 text-xs text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="./signin.html">Log In</a
+                        ><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="./signup.html">Sign Up</a>
+                    </div>
+                </nav>
 
-  <body class="antialiased bg-body text-body font-body">
-    <div class="">
+                <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+                    <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+                    <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
+                        <div class="flex items-center mb-8">
+                            <a class="mr-auto text-3xl font-semibold leading-none" href="#">
+                                <img class="h-20" src="./metis-assets/images/logo2.svg" alt="" width="auto" />
+                            </a>
+                            <button class="navbar-close">
+                                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Product</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Company</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Features</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./blogs.html">Blogs</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./team.html">Team</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./contact.html">Contact Us</a></li>
+                            </ul>
+                            <div class="mt-2 pt-6 border-t border-blueGray-100">
+                                <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="./signup.html">Sign Up</a>
+                                <a class="block px-4 py-3 mb-2 text-xs text-center text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="./signin.html">Log In</a>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <p class="my-4 text-xs text-blueGray-400">
+                                <span>Get in Touch</span>
+                                <a class="text-indigo-600 hover:text-indigo-600 underline" href="./contact.html">hello@writee.in</a>
+                            </p>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/facebook-blue.svg" alt="" />
+                            </a>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/twitter-blue.svg" alt="" />
+                            </a>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/instagram-blue.svg" alt="" />
+                            </a>
+                        </div>
+                    </nav>
+                </div>
 
-      <section class="py-20">
-        <div class="container px-4 mx-auto">
-          <div class="max-w-lg mx-auto mb-12 text-center">
-            <span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">Our Team</span>
-            <h2 class="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">Lorem ipsum dolor sit amet consectutar domor</h2>
-            <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
-          </div>
-          <div class="flex flex-wrap -mx-3 -mb-12">
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
-              <img class="h-64 w-64 rounded object-cover"
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
-              <div class="pt-6 md:pt-2 md:pl-6">
-                <p class="text-xl">Julie Bailey</p>
-                <p class="my-2 text-blue-600">CEO</p>
-                <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non
-                  quam velit.</p>
-              </div>
+                <!-- Nav ends -->
             </div>
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
-              <img class="h-64 w-64 rounded object-cover"
-                src="https://images.unsplash.com/photo-1556474835-b0f3ac40d4d1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
-              <div class="pt-6 md:pt-2 md:pl-6">
-                <p class="text-xl">Tom Brown</p>
-                <p class="my-2 text-sm text-blue-600">Director, Product Development</p>
-                <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non
-                  quam velit.</p>
-              </div>
-            </div>
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
-              <img class="h-64 w-64 rounded object-cover"
-                src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
-              <div class="pt-6 md:pt-2 md:pl-6">
-                <p class="text-xl">Anne Jones</p>
-                <p class="my-2 text-sm text-blue-600">Head of Operations</p>
-                <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non
-                  quam velit.</p>
-              </div>
-            </div>
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
-              <img class="h-64 w-64 rounded object-cover"
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
-              <div class="pt-6 md:pt-2 md:pl-6">
-                <p class="text-xl">Julie Bailey</p>
-                <p class="my-2 text-sm text-blue-600">Head of Development</p>
-                <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non
-                  quam velit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </body>
+        </header>
 
+        <section class="py-10">
+            <div class="container px-4 mx-auto">
+                <div class="max-w-lg mx-auto mb-12 text-center">
+                    <span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">Our Team</span>
+                    <h2 class="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">Lorem ipsum dolor sit amet consectutar domor</h2>
+                    <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
+                </div>
+                <div class="flex flex-wrap -mx-3 -mb-12">
+                    <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
+                        <img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+                        <div class="pt-6 md:pt-2 md:pl-6">
+                            <p class="text-xl">Julie Bailey</p>
+                            <p class="my-2 text-blue-600">CEO</p>
+                            <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
+                        <img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1556474835-b0f3ac40d4d1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+                        <div class="pt-6 md:pt-2 md:pl-6">
+                            <p class="text-xl">Tom Brown</p>
+                            <p class="my-2 text-sm text-blue-600">Director, Product Development</p>
+                            <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
+                        <img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+                        <div class="pt-6 md:pt-2 md:pl-6">
+                            <p class="text-xl">Anne Jones</p>
+                            <p class="my-2 text-sm text-blue-600">Head of Operations</p>
+                            <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
+                        <img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+                        <div class="pt-6 md:pt-2 md:pl-6">
+                            <p class="text-xl">Julie Bailey</p>
+                            <p class="my-2 text-sm text-blue-600">Head of Development</p>
+                            <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
