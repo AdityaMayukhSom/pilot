@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="stylesheet" href="./css/tailwind/tailwind.min.css" />
+        <link rel="stylesheet" href="./css/output.css" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-tailwind.png" />
+
+        <script src="./js/main.js"></script>
+        <script defer src="./js/profile.js"></script>
+    </head>
+    <body class="antialiased bg-body text-body font-body">
+        <header class="w-full shadow-sm mb-3">
+            <div class="container px-4 mx-auto">
+                <!-- Nav starts -->
+
+                <nav class="flex justify-between items-center mx-auto py-6 max-w-[1200px]">
+                    <a class="text-3xl font-semibold leading-none mr-14" href="./index.html">
+                        <img class="w-20" src="./metis-assets/images/logo2.svg" alt="" height="auto" />
+                    </a>
+                    <div class="lg:hidden">
+                        <button class="navbar-burger flex items-center py-2 px-3 text-indigo-600 hover:text-indigo-700 rounded border border-indigo-200 hover:border-indigo-300">
+                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Product</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Company</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Features</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./blogs.html">Blogs</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./team.html">Team</a></li>
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="hidden lg:block">
+                        <a class="mr-2 inline-block px-4 py-3 text-xs text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="./signin.html">Log In</a
+                        ><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="./signup.html">Sign Up</a>
+                    </div>
+                </nav>
+
+                <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+                    <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+                    <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
+                        <div class="flex items-center mb-8">
+                            <a class="mr-auto text-3xl font-semibold leading-none" href="./index.html">
+                                <img class="h-20" src="./metis-assets/images/logo2.svg" alt="" width="auto" />
+                            </a>
+                            <button class="navbar-close">
+                                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Product</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Company</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Features</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./blogs.html">Blogs</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./team.html">Team</a></li>
+                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./contact.html">Contact Us</a></li>
+                            </ul>
+                            <div class="mt-2 pt-6 border-t border-blueGray-100">
+                                <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="#">Sign Up</a>
+                                <a class="block px-4 py-3 mb-2 text-xs text-center text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="#">Log In</a>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <p class="my-4 text-xs text-blueGray-400">
+                                <span>Get in Touch</span>
+                                <a class="text-indigo-600 hover:text-indigo-600 underline" href="#">hello@writee.in</a>
+                            </p>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/facebook-blue.svg" alt="" />
+                            </a>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/twitter-blue.svg" alt="" />
+                            </a>
+                            <a class="inline-block px-1" href="#">
+                                <img src="./metis-assets/icons/instagram-blue.svg" alt="" />
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Nav ends -->
+            </div>
+        </header>
+        <main class="">
+            <form action="" id="information-form" method="post" class="px-6 md:px-20 w-full grid grid-flow-row md:grid-cols-[auto_350px]">
+                <div class="left-container pr-3">
+                    <div class="personal-information">
+                        <div class="w-full flex flex-row justify-between items-center pr-0 md:pr-4 lg:pr-14">
+                            <h1 class="text-[60px] px-4 font-bold border-l-8 border-indigo-600">Personal</h1>
+                            <button class="inline-flex items-center justify-center h-10 p-3 text-gray-700 transition-colors duration-150 bg-white rounded hover:bg-gray-200 focus:outline-none active:outline-none" id="edit-button">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                </svg>
+                                <p class="ml-1 text-lg font-semibold">Edit</p>
+                            </button>
+                            <button class="inline-flex items-center justify-center h-10 p-3 text-gray-700 transition-colors duration-150 bg-white rounded hover:bg-gray-200 focus:outline-none active:outline-none" id="cancel-edit-button">
+                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" class="w-6 h-6 fill-current pt-0.5">
+                                    <path
+                                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
+                                    />
+                                </svg>
+                                <p class="ml-1 text-lg font-semibold">Cancel</p>
+                            </button>
+                        </div>
+                        <div class="bg-white py-4 shadow-sm rounded-sm text-gray-700 grid text-sm">
+                            <div class="flex justify-between flex-row md:grid md:grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Name</div>
+                                <div id="personal-name-show" class="px-4 py-2 form-data-show"></div>
+
+                                <input type="text" name="name" id="personal-form-name" data-personname="person name" class="form-control" />
+                            </div>
+                            <div class="flex justify-between flex-row md:grid md:grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Email.</div>
+                                <div class="px-4 py-2 form-data-show">
+                                    <a class="text-blue-800" href="wec951@safetymail.info" id="personal-email-show"></a>
+                                </div>
+
+                                <input type="email" name="email" id="personal-form-email" data-email="person email" class="form-control" />
+                            </div>
+                            <div class="flex justify-between flex-row md:grid md:grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Contact No.</div>
+                                <div class="px-4 py-2 form-data-show" id="personal-number-show"></div>
+
+                                <input type="number" name="number" id="personal-form-number" data-number="person number" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-information mt-2">
+                        <h1 class="text-[60px] px-4 font-bold border-l-8 border-indigo-600">Company</h1>
+                        <div class="bg-white py-4 shadow-sm rounded-sm text-gray-700 grid text-sm">
+                            <div class="flex justify-between flex-row md:grid md:grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Company Name</div>
+                                <div class="px-4 py-2 form-data-show" id="company-name-show"></div>
+                                <input type="text" name="companyName" id="company-name" data-companyname="company name" class="form-control" />
+                            </div>
+                            <div class="flex justify-between flex-row md:grid md:grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Website</div>
+                                <div class="px-4 py-2 form-data-show">
+                                    <a class="text-blue-800" href="www.whixictechnologies.com" id="company-website-show"></a>
+                                </div>
+                                <input type="text" name="companyWebsite" id="company-website" data-companywebsite="company website" class="form-control" />
+                            </div>
+                            <div class="flex justify-between flex-row md:grid md:grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">GST Number</div>
+                                <div class="px-4 py-2 form-data-show" id="company-gst-show"></div>
+                                <input type="text" name="companyGSTNumber" id="company-gst" data-companygst="company GST" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <h1 class="text-[42px] px-4 py-2 font-bold text-center border-b-2">Social Media</h1>
+                    <div class="bg-white py-3 rounded-sm text-gray-700 grid text-sm space-y-5">
+                        <div class="flex justify-between px-6 items-center">
+                            <img src="./metis-assets/bw-social-icons/icons8-facebook.svg" alt="" srcset="" class="h-10" />
+                            <div class="social-media-data-show" data-social="facebook">
+                                <a class="text-blue-800" href="https://www.facebook.com">www.facebook.com</a>
+                            </div>
+                            <input type="text" name="facebook" id="facebook" class="social-media-control" />
+                        </div>
+                        <div class="flex justify-between px-6 items-center">
+                            <img src="./metis-assets/bw-social-icons/icons8-instagram.svg" alt="" srcset="" class="h-10" />
+                            <div class="social-media-data-show" data-social="instagram">
+                                <a class="text-blue-800" href="https://www.instagram.com">www.instagram.com</a>
+                            </div>
+                            <input type="text" name="instagram" id="instagram" class="social-media-control" />
+                        </div>
+                        <div class="flex justify-between px-6 items-center">
+                            <img src="./metis-assets/bw-social-icons/icons8-linkedin-circled.svg" alt="" srcset="" class="h-10" />
+                            <div class="social-media-data-show" data-social="linkedin">
+                                <a class="text-blue-800" href="https://www.linkedin.com">www.linkedin.com</a>
+                            </div>
+                            <input type="text" name="linkedin" id="linkedin" class="social-media-control" />
+                        </div>
+                        <div class="flex justify-between px-6 items-center">
+                            <img src="./metis-assets/bw-social-icons/icons8-twitter.svg" alt="" srcset="" class="h-10" />
+                            <div class="social-media-data-show" data-social="twitter">
+                                <a class="text-blue-800" href="https://www.twitter.com">www.twitter.com</a>
+                            </div>
+                            <input type="text" name="twitter" id="twitter" class="social-media-control" />
+                        </div>
+                        <div class="flex justify-between px-6 items-center">
+                            <img src="./metis-assets/bw-social-icons/icons8-youtube.svg" alt="" srcset="" class="h-10" />
+                            <div class="social-media-data-show" data-social="youtube">
+                                <a class="text-blue-800" href="https://www.youtube.com">www.youtube.com</a>
+                            </div>
+                            <input type="text" name="youtube" id="youtube" class="social-media-control" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <div id="save-changes-container" class="hidden w-full">
+            <div class="w-full flex flex-col justify-center items-center md:justify-start md:flex-row my-6 px-20 md:space-x-4 gap-y-2 md:gap-y-0">
+                <button form="information-form" id="save-changes-button" type="submit" class="min-w-[200px] w-3/4 max-w-[400px] md:w-[200px] py-4 text-sm text-center font-semibold leading-none focus:outline-none active:outline-none bg-indigo-600 hover:bg-indigo-700 text-white rounded">
+                    Save Changes
+                </button>
+                <button
+                    class="min-w-[200px] w-3/4 max-w-[400px] md:w-[200px] py-4 text-sm text-center font-semibold leading-none focus:outline-none active:outline-none bg-gray-200 hover:bg-gray-300 text-gray-700 hover:text-gray-800 rounded"
+                    form="information-form"
+                    id="clear-form-button"
+                    type="reset"
+                >
+                    Clear All
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
