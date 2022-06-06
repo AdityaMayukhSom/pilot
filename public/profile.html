@@ -23,11 +23,11 @@
 
                 <nav class="flex justify-between items-center mx-auto py-6 max-w-[1200px]">
                     <a class="text-3xl font-semibold leading-none mr-14" href="./index.html">
-                        <img class="w-20" src="./metis-assets/images/logo2.svg" alt="" height="auto" />
+                        <img class="w-20" src="./metis-assets/images/logo2.svg" height="auto" />
                     </a>
                     <div class="lg:hidden">
                         <button class="navbar-burger flex items-center py-2 px-3 text-indigo-600 hover:text-indigo-700 rounded border border-indigo-200 hover:border-indigo-300">
-                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20">
                                 <title>Mobile Menu</title>
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                             </svg>
@@ -55,7 +55,7 @@
                                 <img class="h-20" src="./metis-assets/images/logo2.svg" alt="" width="auto" />
                             </a>
                             <button class="navbar-close">
-                                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                                 </svg>
                             </button>
@@ -80,13 +80,13 @@
                                 <a class="text-indigo-600 hover:text-indigo-600 underline" href="#">hello@writee.in</a>
                             </p>
                             <a class="inline-block px-1" href="#">
-                                <img src="./metis-assets/icons/facebook-blue.svg" alt="" />
+                                <img src="./metis-assets/icons/facebook-blue.svg" />
                             </a>
                             <a class="inline-block px-1" href="#">
-                                <img src="./metis-assets/icons/twitter-blue.svg" alt="" />
+                                <img src="./metis-assets/icons/twitter-blue.svg" />
                             </a>
                             <a class="inline-block px-1" href="#">
-                                <img src="./metis-assets/icons/instagram-blue.svg" alt="" />
+                                <img src="./metis-assets/icons/instagram-blue.svg" />
                             </a>
                         </div>
                     </nav>
@@ -120,22 +120,19 @@
                             <div class="flex justify-between flex-row md:grid md:grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Name</div>
                                 <div id="personal-name-show" class="px-4 py-2 form-data-show"></div>
-
-                                <input type="text" name="name" id="personal-form-name" data-personname="person name" class="form-control" />
+                                <input type="text" name="name" id="personal-name" data-info="personalName" class="form-control" />
                             </div>
                             <div class="flex justify-between flex-row md:grid md:grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Email.</div>
-                                <div class="px-4 py-2 form-data-show">
+                                <div class="px-4 py-2 form-data-show" id="personal-email-show-container">
                                     <a class="text-blue-800" href="wec951@safetymail.info" id="personal-email-show"></a>
                                 </div>
-
-                                <input type="email" name="email" id="personal-form-email" data-email="person email" class="form-control" />
+                                <input type="email" name="email" id="personal-email" data-info="personalEmail" class="form-control" />
                             </div>
                             <div class="flex justify-between flex-row md:grid md:grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Contact No.</div>
                                 <div class="px-4 py-2 form-data-show" id="personal-number-show"></div>
-
-                                <input type="number" name="number" id="personal-form-number" data-number="person number" class="form-control" />
+                                <input type="number" name="number" id="personal-number" data-info="personalNumber" class="form-control" />
                             </div>
                         </div>
                     </div>
@@ -145,19 +142,19 @@
                             <div class="flex justify-between flex-row md:grid md:grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Company Name</div>
                                 <div class="px-4 py-2 form-data-show" id="company-name-show"></div>
-                                <input type="text" name="companyName" id="company-name" data-companyname="company name" class="form-control" />
+                                <input type="text" name="companyName" id="company-name" data-info="companyName" class="form-control" />
                             </div>
                             <div class="flex justify-between flex-row md:grid md:grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Website</div>
-                                <div class="px-4 py-2 form-data-show">
+                                <div class="px-4 py-2 form-data-show" id="company-website-show-container">
                                     <a class="text-blue-800" href="www.whixictechnologies.com" id="company-website-show"></a>
                                 </div>
-                                <input type="text" name="companyWebsite" id="company-website" data-companywebsite="company website" class="form-control" />
+                                <input type="text" name="companyWebsite" id="company-website" data-info="companyWebsite" class="form-control" />
                             </div>
                             <div class="flex justify-between flex-row md:grid md:grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">GST Number</div>
                                 <div class="px-4 py-2 form-data-show" id="company-gst-show"></div>
-                                <input type="text" name="companyGSTNumber" id="company-gst" data-companygst="company GST" class="form-control" />
+                                <input type="text" name="companyGSTNumber" id="company-gst" data-info="companyGST" class="form-control" />
                             </div>
                         </div>
                     </div>
@@ -166,35 +163,35 @@
                     <h1 class="text-[42px] px-4 py-2 font-bold text-center border-b-2">Social Media</h1>
                     <div class="bg-white py-3 rounded-sm text-gray-700 grid text-sm space-y-5">
                         <div class="flex justify-between px-6 items-center">
-                            <img src="./metis-assets/bw-social-icons/icons8-facebook.svg" alt="" srcset="" class="h-10" />
+                            <img src="./metis-assets/bw-social-icons/icons8-facebook.svg" class="h-10" />
                             <div class="social-media-data-show" data-social="facebook">
                                 <a class="text-blue-800" href="https://www.facebook.com">www.facebook.com</a>
                             </div>
                             <input type="text" name="facebook" id="facebook" class="social-media-control" />
                         </div>
                         <div class="flex justify-between px-6 items-center">
-                            <img src="./metis-assets/bw-social-icons/icons8-instagram.svg" alt="" srcset="" class="h-10" />
+                            <img src="./metis-assets/bw-social-icons/icons8-instagram.svg" class="h-10" />
                             <div class="social-media-data-show" data-social="instagram">
                                 <a class="text-blue-800" href="https://www.instagram.com">www.instagram.com</a>
                             </div>
                             <input type="text" name="instagram" id="instagram" class="social-media-control" />
                         </div>
                         <div class="flex justify-between px-6 items-center">
-                            <img src="./metis-assets/bw-social-icons/icons8-linkedin-circled.svg" alt="" srcset="" class="h-10" />
+                            <img src="./metis-assets/bw-social-icons/icons8-linkedin-circled.svg" class="h-10" />
                             <div class="social-media-data-show" data-social="linkedin">
                                 <a class="text-blue-800" href="https://www.linkedin.com">www.linkedin.com</a>
                             </div>
                             <input type="text" name="linkedin" id="linkedin" class="social-media-control" />
                         </div>
                         <div class="flex justify-between px-6 items-center">
-                            <img src="./metis-assets/bw-social-icons/icons8-twitter.svg" alt="" srcset="" class="h-10" />
+                            <img src="./metis-assets/bw-social-icons/icons8-twitter.svg" class="h-10" />
                             <div class="social-media-data-show" data-social="twitter">
                                 <a class="text-blue-800" href="https://www.twitter.com">www.twitter.com</a>
                             </div>
                             <input type="text" name="twitter" id="twitter" class="social-media-control" />
                         </div>
                         <div class="flex justify-between px-6 items-center">
-                            <img src="./metis-assets/bw-social-icons/icons8-youtube.svg" alt="" srcset="" class="h-10" />
+                            <img src="./metis-assets/bw-social-icons/icons8-youtube.svg" class="h-10" />
                             <div class="social-media-data-show" data-social="youtube">
                                 <a class="text-blue-800" href="https://www.youtube.com">www.youtube.com</a>
                             </div>

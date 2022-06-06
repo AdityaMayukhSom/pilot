@@ -1,16 +1,20 @@
-let user1 = {
-    personalName: 'William L. Guest',
-    personalEmail: 'wec951@safetymail.info',
-    personalNumber: '905385031',
-    companyName: 'Whixic Technologies',
-    companyWebsite: 'www.whixictechnologies.com',
-    companyGSTNumber: '18AABCU9603R1ZM',
-    facebookURL: 'https://www.facebook.com',
-    instagramURL: 'https://www.instagram.com',
-    linkedinURL: 'https://www.linkedin.com',
-    twitterURL: 'https://www.twitter.com',
-    youtubeURL: 'https://www.youtube.com'
-};
+class User {
+    constructor(personalName, personalEmail, personalNumber, companyName, companyWebsite, companyGSTNumber, facebookURL, instagramURL, linkedinURL, twitterURL, youtubeURL) {
+        this.personalName = personalName;
+        this.personalEmail = personalEmail;
+        this.personalNumber = personalNumber;
+        this.companyName = companyName;
+        this.companyWebsite = companyWebsite;
+        this.companyGSTNumber = companyGSTNumber;
+        this.facebookURL = facebookURL;
+        this.instagramURL = instagramURL;
+        this.linkedinURL = linkedinURL;
+        this.twitterURL = twitterURL;
+        this.youtubeURL = youtubeURL;
+    }
+}
+
+let user = new User('William L. Guest', 'wec951@safetymail.info', '905385031', 'Whixic Technologies', 'www.whixictechnologies.com', '18AABCU9603R1ZM', 'https://www.facebook.com', 'https://www.instagram.com', 'https://www.linkedin.com', 'https://www.twitter.com', 'https://www.youtube.com');
 
 const informationForm = document.getElementById('information-form');
 const formControl = document.querySelectorAll('.form-control');
@@ -21,12 +25,6 @@ const editButton = document.getElementById('edit-button');
 const cancelEditButton = document.getElementById('cancel-edit-button');
 const saveChangesButton = document.getElementById('save-changes-button');
 const clearFormButton = document.getElementById('clear-form-button');
-const personalNameShow = document.getElementById('personal-name-show');
-const personalEmailShow = document.getElementById('personal-email-show');
-const personalNumberShow = document.getElementById('personal-number-show');
-const companyNameShow = document.getElementById('company-name-show');
-const companyWebsiteShow = document.getElementById('company-website-show');
-const companyGSTShow = document.getElementById('company-gst-show');
 const saveChangesContainer = document.getElementById('save-changes-container');
 
 formControl.forEach((element) => {
@@ -41,29 +39,45 @@ handleValueShow();
 cancelEditButton.classList.add('hidden');
 
 function handleValueShow() {
-    personalNameShow.innerText = user1.personalName;
-    personalEmailShow.innerText = user1.personalEmail;
-    personalNumberShow.innerText = user1.personalNumber;
-    companyNameShow.innerText = user1.companyName;
-    companyWebsiteShow.innerText = user1.companyWebsite;
-    companyGSTShow.innerText = user1.companyGSTNumber;
+    formDataShow.forEach((element) => {
+        switch (element.id) {
+            case 'personal-name-show':
+                element.innerText = user.personalName;
+                break;
+            case 'personal-email-show-container':
+                element.childNodes[1].innerText = user.personalEmail;
+                break;
+            case 'personal-number-show':
+                element.innerText = user.personalNumber;
+                break;
+            case 'company-name-show':
+                element.innerText = user.companyName;
+                break;
+            case 'company-website-show-container':
+                element.childNodes[1].innerText = user.companyWebsite;
+                break;
+            case 'company-gst-show':
+                element.innerText = user.companyGSTNumber;
+                break;
+        }
+    });
 
     socialMediaDataShow.forEach((element) => {
         switch (element.dataset.social) {
             case 'facebook':
-                element.childNodes[1].innerText = user1.facebookURL;
+                element.childNodes[1].innerText = user.facebookURL;
                 break;
             case 'instagram':
-                element.childNodes[1].innerText = user1.instagramURL;
+                element.childNodes[1].innerText = user.instagramURL;
                 break;
             case 'linkedin':
-                element.childNodes[1].innerText = user1.linkedinURL;
+                element.childNodes[1].innerText = user.linkedinURL;
                 break;
             case 'twitter':
-                element.childNodes[1].innerText = user1.twitterURL;
+                element.childNodes[1].innerText = user.twitterURL;
                 break;
             case 'youtube':
-                element.childNodes[1].innerText = user1.youtubeURL;
+                element.childNodes[1].innerText = user.youtubeURL;
                 break;
         }
     });
@@ -83,32 +97,47 @@ function handleEdit() {
 
         formControl.forEach((element) => {
             element.classList.remove('hidden');
-            if (element.dataset.personname) {
-                element.setAttribute('value', user1.personalName);
-            } else if (element.dataset.email) {
-                element.setAttribute('value', user1.personalEmail);
-            } else if (element.dataset.number) {
-                element.setAttribute('value', user1.personalNumber);
-            } else if (element.dataset.companyname) {
-                element.setAttribute('value', user1.companyName);
-            } else if (element.dataset.companywebsite) {
-                element.setAttribute('value', user1.companyWebsite);
-            } else if (element.dataset.companygst) {
-                element.setAttribute('value', user1.companyGSTNumber);
+            switch (element.dataset.info) {
+                case 'personalName':
+                    element.setAttribute('value', user.personalName);
+                    break;
+                case 'personalEmail':
+                    element.setAttribute('value', user.personalEmail);
+                    break;
+                case 'personalNumber':
+                    element.setAttribute('value', user.personalNumber);
+                    break;
+                case 'companyName':
+                    element.setAttribute('value', user.companyName);
+                    break;
+                case 'companyWebsite':
+                    element.setAttribute('value', user.companyWebsite);
+                    break;
+                case 'companyGST':
+                    element.setAttribute('value', user.companyGSTNumber);
+                    break;
             }
         });
         socialMediaControl.forEach((element) => {
             element.classList.remove('hidden');
-            if (element.id === 'facebook') {
-                element.setAttribute('value', user1.facebookURL);
-            } else if (element.id === 'instagram') {
-                element.setAttribute('value', user1.instagramURL);
-            } else if (element.id === 'linkedin') {
-                element.setAttribute('value', user1.linkedinURL);
-            } else if (element.id === 'twitter') {
-                element.setAttribute('value', user1.twitterURL);
-            } else if (element.id === 'youtube') {
-                element.setAttribute('value', user1.youtubeURL);
+            switch (element.id) {
+                case 'facebook':
+                    element.setAttribute('value', user.facebookURL);
+                    break;
+                case 'instagram':
+                    element.setAttribute('value', user.instagramURL);
+                    break;
+                case 'linkedin':
+                    element.setAttribute('value', user.linkedinURL);
+                    break;
+                case 'twitter':
+                    element.setAttribute('value', user.twitterURL);
+                    break;
+                case 'youtube':
+                    element.setAttribute('value', user.youtubeURL);
+                    break;
+                default:
+                    break;
             }
         });
     } else {
@@ -147,22 +176,25 @@ informationForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(informationForm);
     if (formData.get('name') || formData.get('email') || formData.get('number') || formData.get('companyName') || formData.get('companyWebsite') || formData.get('companyGSTNumber')) {
-        let submittedInput = {
-            personalName: formData.get('name'),
-            personalEmail: formData.get('email'),
-            personalNumber: formData.get('number'),
-            companyName: formData.get('companyName'),
-            companyWebsite: formData.get('companyWebsite'),
-            companyGSTNumber: formData.get('companyGSTNumber'),
-            facebookURL: formData.get('facebook'),
-            instagramURL: formData.get('instagram'),
-            linkedinURL: formData.get('linkedin'),
-            twitterURL: formData.get('twitter'),
-            youtubeURL: formData.get('youtube')
-        };
-        user1 = { ...submittedInput };
+        //creates temporary object
+
+        let submittedUserInformation = new User(
+            formData.get('name'),
+            formData.get('email'),
+            formData.get('number'),
+            formData.get('companyName'),
+            formData.get('companyWebsite'),
+            formData.get('companyGSTNumber'),
+            formData.get('facebook'),
+            formData.get('instagram'),
+            formData.get('linkedin'),
+            formData.get('twitter'),
+            formData.get('youtube')
+        );
+        user = { ...submittedUserInformation };
         handleEdit();
     } else {
+        //If personal and company form is empty, show alert and do nothing.
         alert('Personal And Company information Cannot Be Empty!');
     }
 });
