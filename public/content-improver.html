@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Blog Outline | Writee</title>
+        <title>Content Improver | Writee</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -91,62 +91,44 @@
         </header>
 
         <section class="mx-16 lg:mx-32 my-8">
-            <p class="font-bold text-center md:text-left text-4xl sm:text-6xl md:text-7xl pl-2">Blog Outline</p>
+            <p class="font-bold text-center md:text-left text-4xl sm:text-6xl md:text-7xl pl-2">Improve Your Content Here</p>
         </section>
 
-        <main class="mx-8 lg:mx-0 lg:my-2">
-            <section class="relative flex flex-wrap w-full">
-                <div class="w-full px-4 py-2 lg:w-1/2 sm:px-6 lg:px-4 sm:py-16 lg:py-8 flex lg:justify-end">
-                    <form action="" name="contentForm" class="w-full lg:w-5/6 mb-0 space-y-4">
-                        <!-- Drop Down Menu For Preferred Tone -->
+        <!-- <label class="text-gray-700 h-full" for="content">
+            <textarea
+                class="flex-1 appearance-none w-full py-2 px-4 bg-[#F9FAFC] text-gray-700 placeholder-[#a0aab6] placeholder:font-semibold rounded-md text-base focus:outline-purple-500 font-medium lg:w-5/6 shadow h-full min-h-[250px]"
+                id="content"
+                placeholder="Brewing Your Blog..."
+                name="content"
+                cols="40"
+            ></textarea>
+        </label> -->
 
-                        <div class="pt-2">
-                            <label class="text-gray-700" for="description">
-                                <textarea
-                                    class="appearance-none w-full py-2 px-4 bg-[#F9FAFC] text-gray-700 focus:outline-purple-500 placeholder-[#a0aab6] placeholder:font-semibold rounded-lg text-sm font-medium shadow"
-                                    id="description"
-                                    name="description"
-                                    placeholder="Give Us Topic And We Will Write The Blog."
-                                    rows="6"
-                                    cols="40"
-                                ></textarea>
-                            </label>
-                        </div>
-
-                        <div class="w-full relative">
-                            <!-- Drop Down Arrow -->
-                            <div class="absolute h-full w-full z-10 text-right text-3xl align-middle px-3 pointer-events-none">&#8250;</div>
-                            <label class="text-gray-700" for="preferredType">
-                                <select id="preferredType" class="block font-medium w-full py-2 px-3 focus:outline-purple-500 bg-[#F9FAFC] rounded-md appearance-none shadow" name="preferredTone" autocomplete="off">
-                                    <option value="" disabled selected>Select Type</option>
-                                    <option value="informative">Informative</option>
-                                    <option value="marketing">Marketing</option>
-                                    <option value="nuanced">Nuanced</option>
-                                    <option value="funny">Funny</option>
-                                </select>
-                            </label>
-                        </div>
-
-                        <div class="flex sm:flex-row items-center gap-4 pt-2">
-                            <button class="text-indigo-600 hover:text-white hover:bg-indigo-600 px-8 py-3 border rounded border-indigo-600 group focus:outline-none focus:ring min-w-[120px] md:min-w-[200px] text-sm md:text-base">Get Outline!</button>
-                            <button class="px-6 md:px-8 py-3 border rounded border-red-600 group text-sm md:text-base focus:outline-none text-red-600 focus:ring hover:bg-red-600 hover:text-white min-w-[120px] md:min-w-[200px]">Reset Content</button>
-                        </div>
-                    </form>
+        <main class="mx-16 lg:mx-32 my-8">
+            <section class="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 gap-6 w-full">
+                <div class="w-full">
+                    <textarea
+                        class="appearance-none w-full py-2 px-4 bg-[#F9FAFC] text-gray-700 placeholder-[#a0aab6] placeholder:font-semibold rounded-md text-base focus:outline-purple-500 font-medium shadow"
+                        id="content-input"
+                        placeholder="Enter Your Content..."
+                        rows="13"
+                        name="content-input"
+                    ></textarea>
                 </div>
-
-                <div class="w-full px-4 py-6 lg:w-1/2 lg:px-4 sm:py-8 lg:py-8">
-                    <label class="text-gray-700" for="content">
-                        <textarea
-                            class="flex-1 appearance-none w-full py-2 px-4 bg-[#F9FAFC] text-gray-700 placeholder-[#a0aab6] placeholder:font-semibold rounded-md text-base focus:outline-purple-500 font-medium lg:w-5/6 shadow"
-                            id="content"
-                            placeholder="Please Wait. Your Content Is Brewing..."
-                            name="content"
-                            rows="11"
-                            cols="40"
-                        ></textarea>
-                    </label>
+                <div class="w-full">
+                    <textarea
+                        class="appearance-none w-full py-2 px-4 bg-[#F9FAFC] text-gray-700 placeholder-[#a0aab6] placeholder:font-semibold rounded-md text-base focus:outline-purple-500 font-medium shadow"
+                        id="content-output"
+                        placeholder="Get Your Content Here..."
+                        rows="13"
+                        name="content-output"
+                    ></textarea>
                 </div>
             </section>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 w-full pt-5">
+                <button id="submit" type="submit" class="text-indigo-600 hover:text-white hover:bg-indigo-600 px-8 py-3 border rounded border-indigo-600 group focus:outline-none focus:ring min-w-[120px] md:min-w-[200px] text-sm md:text-base">Submit</button>
+                <button id="reset" type="reset" class="px-6 md:px-8 py-3 border rounded border-red-600 group text-sm md:text-base focus:outline-none text-red-600 focus:ring hover:bg-red-600 hover:text-white min-w-[120px] md:min-w-[200px]">Reset</button>
+            </div>
         </main>
     </body>
 </html>
