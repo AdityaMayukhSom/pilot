@@ -69,20 +69,21 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </ul>
                             </div>
                         </div>`;
+    if (loginContainer) {
+        if (isLoggedIn) {
+            loginContainer.innerHTML = loggedInString;
+            const dropdownButton = document.getElementById('dropdown-button');
+            const dropdownMenu = document.getElementById('dropdown-menu');
 
-    if (isLoggedIn) {
-        loginContainer.innerHTML = loggedInString;
-        const dropdownButton = document.getElementById('dropdown-button');
-        const dropdownMenu = document.getElementById('dropdown-menu');
-
-        dropdownButton.addEventListener('click', () => {
-            if (dropdownMenu.classList.contains('hidden')) {
-                dropdownMenu.classList.remove('hidden');
-            } else {
-                dropdownMenu.classList.add('hidden');
-            }
-        });
-    } else {
-        loginContainer.innerHTML = notLoggedInString;
+            dropdownButton.addEventListener('click', () => {
+                if (dropdownMenu.classList.contains('hidden')) {
+                    dropdownMenu.classList.remove('hidden');
+                } else {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        } else {
+            loginContainer.innerHTML = notLoggedInString;
+        }
     }
 });
