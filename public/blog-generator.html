@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blog Generator | Writee</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="stylesheet" href="./css/output.css" />
+        <link rel="stylesheet" href="./css/tailwind/tailwind.min.css" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <script src="./js/main.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/footer.js"></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <section class="mx-16 lg:mx-20 mt-6">
+            <p class="product-headings">Blog Generator</p>
+        </section>
+
+        <main class="mx-8 lg:mx-0 py-5">
+            <section class="relative flex flex-wrap w-full gap-y-4 lg:gap-y-0">
+                <div class="w-full px-4 lg:w-1/2 sm:px-6 lg:px-4 flex lg:justify-end">
+                    <form action="" name="contentForm" class="w-full lg:w-11/12 mb-0 space-y-4">
+                        <label class="text-gray-700" for="blogTopic">
+                            <textarea
+                                class="textarea-input"
+                                id="blogTopic"
+                                placeholder="Enter the topic of the blog. Be as specific as possible. Example, System versus software from the point of view of an entrepreneur. Or, copywriting 101 for a marketing firm."
+                                name="blogTopic"
+                                rows="5"
+                                cols="40"
+                            ></textarea>
+                        </label>
+
+                        <input type="number" class="text-input" placeholder="Word Limit" />
+
+                        <div class="w-full relative">
+                            <!-- Drop Down Arrow -->
+                            <div class="absolute h-full w-full z-10 text-right text-3xl align-middle px-3 pointer-events-none">&#8250;</div>
+                            <label class="text-gray-700" for="preferredType">
+                                <select id="preferredType" class="dropdown-input" name="preferredType" autocomplete="off">
+                                    <option value="" disabled selected>Select Preferred Type</option>
+                                    <option value="informative">Informative</option>
+                                    <option value="promotional">Promotional</option>
+                                    <option value="nuanced">Nuanced</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="flex items-center gap-4 pt-2 flex-col sm:flex-row">
+                            <button class="red-button">Reset Content</button>
+                            <button class="blue-button">Get Blog</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="w-full lg:w-1/2 px-4 grid grid-rows-[auto_120px] xs:grid-rows-[auto_90px] sm:grid-rows-[auto_60px]">
+                    <label class="text-gray-700 h-full" for="content">
+                        <textarea class="textarea-output" id="content" placeholder="Brewing Magic!" name="content" cols="40"></textarea>
+                    </label>
+                    <div role="alert" class="w-full lg:w-11/12 flex items-end">
+                        <div class="generate-content-alert">
+                            <p>Generate Content atleast 2-3 times to get the best results!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="faq mx-8">
+            <section class="relative py-8 md:py-16 bg-white min-w-screen animation-fade animation-delay">
+                <div class="container px-8 mx-auto sm:px-12 xl:px-5">
+                    <p class="text-xs font-bold text-purple-500 uppercase sm:mx-6 text-center sm:text-normal sm:font-bold">Got a Question? We’ve got answers.</p>
+                    <h3 class="mt-1 text-2xl font-bold text-gray-800 sm:mx-6 sm:text-3xl md:text-4xl lg:text-5xl text-center">Frequently Asked Questions</h3>
+                    <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+                        <h3 class="text-lg font-bold text-indigo-700 sm:text-xl md:text-2xl">How does it work?</h3>
+                        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">It's rather simple. All you need is to enter what you want your post about and Writee will come up the best content possible. P.S. You may have to try 2-3 times to get the most optimised result.</p>
+                    </div>
+                    <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+                        <h3 class="text-lg font-bold text-indigo-700 sm:text-xl md:text-2xl">Do you have an example Topic?</h3>
+                        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
+                            Yes, we do! <br />
+                            Ex 1: Copywriting 101 for budding marketers<br />
+                            Ex 2: Product Breakdown Tutorial for Business Enthusiasts<br />
+                            Ex 3: How does India utilise 80% of its water consumption?
+                        </p>
+                    </div>
+                    <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+                        <h3 class="text-lg font-bold text-indigo-700 sm:text-xl md:text-2xl">How do I make changes?</h3>
+                        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">The blog written is editable. Just select the parts you want to edit and get a structured and nuanced blog in seconds.</p>
+                    </div>
+                    <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+                        <h3 class="text-lg font-bold text-indigo-700 sm:text-xl md:text-2xl">Why is AI-Generated Quote Better?</h3>
+                        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">There are more reasons than we can mention. This speed with this level of attention to detail is something that only an AI can do. This FAQ is written by Writee itself. Trust us yet?</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer-component></footer-component>
+    </body>
+</html>
