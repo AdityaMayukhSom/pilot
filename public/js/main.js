@@ -40,12 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    const currentYear = new Date();
-    const allRightsReserved = document.getElementById('all-rights-reserved');
-    if (allRightsReserved) {
-        allRightsReserved.innerHTML = `&copy; ${currentYear.getFullYear()}. All rights reserved.`;
-    }
-
     //Handling Login
     const loginContainer = document.getElementById('login-container');
     const notLoggedInString = ` <a class="mr-2 inline-block px-4 py-3 text-xs text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="./signin.html"> Log In </a>
