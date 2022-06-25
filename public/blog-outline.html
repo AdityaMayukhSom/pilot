@@ -11,105 +11,25 @@
         <link rel="stylesheet" href="./css/tailwind/tailwind.min.css" />
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
         <script src="./js/main.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/footer.js"></script>
     </head>
 
     <body>
-        <header class="w-full shadow-sm">
-            <div class="container px-4 mx-auto">
-                <!-- Nav starts -->
-
-                <nav class="flex justify-between items-center mx-auto py-6 max-w-[1200px]">
-                    <a class="text-3xl font-semibold leading-none min-w-[200px]" href="./index.html">
-                        <img class="w-20" src="./metis-assets/images/logo2.svg" alt="" height="auto" />
-                    </a>
-                    <div class="lg:hidden">
-                        <button class="navbar-burger flex items-center py-2 px-3 text-indigo-600 hover:text-indigo-700 rounded border border-indigo-200 hover:border-indigo-300">
-                            <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <title>Mobile Menu</title>
-                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./tools.html">Product</a></li>
-                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Company</a></li>
-                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Features</a></li>
-                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./blogs.html">Blogs</a></li>
-                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./team.html">Team</a></li>
-                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./contact.html">Contact Us</a></li>
-                    </ul>
-                    <div class="hidden lg:flex justify-end min-w-[200px]" id="login-container"></div>
-                </nav>
-
-                <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
-                    <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
-                    <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
-                        <div class="flex items-center mb-8">
-                            <a class="mr-auto text-3xl font-semibold leading-none" href="./index.html">
-                                <img class="h-20" src="./metis-assets/images/logo2.svg" alt="" width="auto" />
-                            </a>
-                            <button class="navbar-close">
-                                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div>
-                            <ul>
-                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Product</a></li>
-                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Company</a></li>
-                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="#">Features</a></li>
-                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./blogs.html">Blogs</a></li>
-                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./team.html">Team</a></li>
-                                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-indigo-600" href="./contact.html">Contact Us</a></li>
-                            </ul>
-                            <div class="mt-2 pt-6 border-t border-blueGray-100">
-                                <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-indigo-600 hover:bg-indigo-700 text-white rounded" href="#">Sign Up</a
-                                ><a class="block px-4 py-3 mb-2 text-xs text-center text-indigo-600 hover:text-indigo-700 font-semibold leading-none border border-indigo-200 hover:border-indigo-300 rounded" href="#">Log In</a>
-                            </div>
-                        </div>
-                        <div class="mt-auto">
-                            <p class="my-4 text-xs text-blueGray-400">
-                                <span>Get in Touch</span>
-                                <a class="text-indigo-600 hover:text-indigo-600 underline" href="#">hello@writee.in</a>
-                            </p>
-                            <a class="inline-block px-1" href="#">
-                                <img src="./metis-assets/icons/facebook-blue.svg" alt="" />
-                            </a>
-                            <a class="inline-block px-1" href="#">
-                                <img src="./metis-assets/icons/twitter-blue.svg" alt="" />
-                            </a>
-                            <a class="inline-block px-1" href="#">
-                                <img src="./metis-assets/icons/instagram-blue.svg" alt="" />
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-
-                <!-- Nav ends -->
-            </div>
-        </header>
-
-        <section class="mx-16 lg:mx-32 my-8">
-            <p class="font-bold text-center md:text-left text-4xl sm:text-6xl md:text-7xl pl-2">Blog Outline</p>
+        <header-component></header-component>
+        <section class="mx-16 lg:mx-20 mt-6">
+            <p class="product-headings">Blog Outline</p>
         </section>
 
-        <main class="mx-8 lg:mx-0 lg:my-2">
-            <section class="relative flex flex-wrap w-full">
-                <div class="w-full px-4 py-2 lg:w-1/2 sm:px-6 lg:px-4 sm:py-16 lg:py-8 flex lg:justify-end">
-                    <form action="" name="contentForm" class="w-full lg:w-5/6 mb-0 space-y-4">
+        <main class="mx-8 lg:mx-0 py-5">
+            <section class="relative flex flex-wrap w-full gap-y-4 lg:gap-y-0">
+                <div class="w-full px-4 lg:w-1/2 sm:px-6 lg:px-4 flex lg:justify-end">
+                    <form action="" name="contentForm" class="w-full lg:w-11/12 mb-0 space-y-4">
                         <!-- Drop Down Menu For Preferred Tone -->
 
-                        <div class="pt-2">
+                        <div class="">
                             <label class="text-gray-700" for="description">
-                                <textarea
-                                    class="appearance-none w-full py-2 px-4 bg-[#F9FAFC] text-gray-700 focus:outline-purple-500 placeholder-[#a0aab6] placeholder:font-semibold rounded-lg text-sm font-medium shadow"
-                                    id="description"
-                                    name="description"
-                                    placeholder="Give Us Topic And We Will Write The Blog."
-                                    rows="6"
-                                    cols="40"
-                                ></textarea>
+                                <textarea class="textarea-input" id="description" name="description" placeholder="Enter the topic of the blog. Be as specific as possible. Example, System versus software from the point of view of an entrepreneur." rows="9" cols="40"></textarea>
                             </label>
                         </div>
 
@@ -117,36 +37,63 @@
                             <!-- Drop Down Arrow -->
                             <div class="absolute h-full w-full z-10 text-right text-3xl align-middle px-3 pointer-events-none">&#8250;</div>
                             <label class="text-gray-700" for="preferredType">
-                                <select id="preferredType" class="block font-medium w-full py-2 px-3 focus:outline-purple-500 bg-[#F9FAFC] rounded-md appearance-none shadow" name="preferredTone" autocomplete="off">
+                                <select id="preferredType" class="dropdown-input" name="preferredTone" autocomplete="off">
                                     <option value="" disabled selected>Select Type</option>
                                     <option value="informative">Informative</option>
-                                    <option value="marketing">Marketing</option>
+                                    <option value="promotional">Promotional</option>
                                     <option value="nuanced">Nuanced</option>
-                                    <option value="funny">Funny</option>
                                 </select>
                             </label>
                         </div>
 
-                        <div class="flex sm:flex-row items-center gap-4 pt-2">
-                            <button class="text-indigo-600 hover:text-white hover:bg-indigo-600 px-8 py-3 border rounded border-indigo-600 group focus:outline-none focus:ring min-w-[120px] md:min-w-[200px] text-sm md:text-base">Get Outline!</button>
-                            <button class="px-6 md:px-8 py-3 border rounded border-red-600 group text-sm md:text-base focus:outline-none text-red-600 focus:ring hover:bg-red-600 hover:text-white min-w-[120px] md:min-w-[200px]">Reset Content</button>
+                        <div class="flex items-center gap-4 pt-2 flex-col sm:flex-row">
+                            <button class="red-button">Reset Content</button>
+                            <button class="blue-button">Get Outline</button>
                         </div>
                     </form>
                 </div>
 
-                <div class="w-full px-4 py-6 lg:w-1/2 lg:px-4 sm:py-8 lg:py-8">
+                <div class="w-full lg:w-1/2 px-4 grid grid-rows-[auto_120px] xs:grid-rows-[auto_90px] sm:grid-rows-[auto_60px]">
                     <label class="text-gray-700" for="content">
-                        <textarea
-                            class="flex-1 appearance-none w-full py-2 px-4 bg-[#F9FAFC] text-gray-700 placeholder-[#a0aab6] placeholder:font-semibold rounded-md text-base focus:outline-purple-500 font-medium lg:w-5/6 shadow"
-                            id="content"
-                            placeholder="Please Wait. Your Content Is Brewing..."
-                            name="content"
-                            rows="11"
-                            cols="40"
-                        ></textarea>
+                        <textarea class="textarea-output" id="content" placeholder="Brewing Magic!" name="content" cols="40"></textarea>
                     </label>
+                    <div role="alert" class="w-full lg:w-11/12 flex items-end">
+                        <div class="generate-content-alert">
+                            <p>Generate Content atleast 2-3 times to get the best results!</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+        <section class="faq mx-8">
+            <section class="relative py-8 md:py-16 bg-white min-w-screen animation-fade animation-delay">
+                <div class="container px-8 mx-auto sm:px-12 xl:px-5">
+                    <p class="text-xs font-bold text-purple-500 uppercase sm:mx-6 text-center sm:text-normal sm:font-bold">Got a Question? We’ve got answers.</p>
+                    <h3 class="mt-1 text-2xl font-bold text-gray-800 sm:mx-6 sm:text-3xl md:text-4xl lg:text-5xl text-center">Frequently Asked Questions</h3>
+                    <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+                        <h3 class="text-lg font-bold text-indigo-700 sm:text-xl md:text-2xl">How does it work?</h3>
+                        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">It's rather simple. All you need is to enter what you want your post about and Writee will come up the best content possible. P.S. You may have to try 2-3 times to get the most optimised result.</p>
+                    </div>
+                    <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+                        <h3 class="text-lg font-bold text-indigo-700 sm:text-xl md:text-2xl">Do you have an example Topic?</h3>
+                        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
+                            Yes, we do! <br />
+                            Ex 1: Copywriting 101 for budding marketers<br />
+                            Ex 2: Product Breakdown Tutorial for Business Enthusiasts<br />
+                            Ex 3: How does India utilise 80% of its water consumption?
+                        </p>
+                    </div>
+                    <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+                        <h3 class="text-lg font-bold text-indigo-700 sm:text-xl md:text-2xl">How do I make changes?</h3>
+                        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">The outline generated is editable. Just select the parts you want to edit and get a structured outline in seconds.</p>
+                    </div>
+                    <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+                        <h3 class="text-lg font-bold text-indigo-700 sm:text-xl md:text-2xl">Why is AI-Generated Quote Better?</h3>
+                        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">There are more reasons than we can mention. This speed with this level of attention to detail is something that only an AI can do. This FAQ is written by Writee itself. Trust us yet?</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer-component></footer-component>
     </body>
 </html>

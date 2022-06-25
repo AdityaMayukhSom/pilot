@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --scrollbar-track-width: 9px;
+    --scrollbar-width: 9px;
+}
+
+body {
+    min-height: 100vh;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -12,9 +18,22 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
     -moz-appearance: textfield;
 }
-* {
-    font-family: 'Montserrat', sans-serif;
+
+body::-webkit-scrollbar-track {
+    border-radius: var(--scrollbar-track-width);
+    background-color: #fff;
+    margin-block: 2px;
 }
+body::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: var(--scrollbar-width);
+    background: -webkit-linear-gradient(to top, #e114b9, #3b00b7);
+    background: linear-gradient(to top, #e114b9, #3b00b7);
+}
+
 @layer components {
     .form-control {
         @apply block py-1 px-2 text-sm text-gray-900 bg-transparent border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 mx-4;
@@ -24,5 +43,29 @@ input[type='number'] {
     }
     .social-media-data-show {
         @apply px-4 py-2;
+    }
+    .product-headings {
+        @apply font-bold text-center md:text-left text-4xl;
+    }
+    .text-input {
+        @apply appearance-none w-full py-4 px-4 bg-[#F9FAFC] text-gray-700 focus:outline-purple-500 placeholder-[#a0aab6]  rounded text-sm font-medium placeholder:font-medium shadow-sm;
+    }
+    .dropdown-input {
+        @apply block font-medium w-full py-3 px-3 focus:outline-purple-500 bg-[#F9FAFC] rounded appearance-none shadow-sm text-sm;
+    }
+    .textarea-input {
+        @apply appearance-none w-full  bg-[#F9FAFC] text-gray-700 focus:outline-purple-500 placeholder-[#a0aab6]  shadow-sm p-4 text-sm font-medium placeholder:font-medium leading-none rounded placeholder:leading-4;
+    }
+    .textarea-output {
+        @apply flex-1 appearance-none w-full p-4 bg-[#F9FAFC] text-gray-700 placeholder-[#a0aab6] placeholder:font-medium rounded text-sm focus:outline-purple-500 font-medium lg:w-11/12 shadow-sm h-full min-h-[300px] lg:min-h-0 placeholder:leading-4;
+    }
+    .red-button {
+        @apply px-6 py-3 border rounded border-red-600 text-sm focus:outline-none text-red-600 focus:ring hover:bg-red-600 hover:text-white w-full sm:w-auto sm:min-w-[160px];
+    }
+    .blue-button {
+        @apply text-indigo-600 hover:text-white hover:bg-indigo-600 px-6 py-3 border rounded border-indigo-600 focus:outline-none focus:ring w-full sm:w-auto sm:min-w-[160px] text-sm;
+    }
+    .generate-content-alert {
+        @apply border border-red-400 rounded bg-red-100 px-4 py-3 w-full text-sm;
     }
 }
